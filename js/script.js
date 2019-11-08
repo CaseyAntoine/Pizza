@@ -7,7 +7,19 @@ function Pizza(size, veggies, meats){
 }
 
 Pizza.prototype.getPrice = function() {
-  
+
+  this.veggies.forEach(function(veggies) {
+    this.price += .50;
+  })
+  if(this.size === 10) {
+    this.price += 9;
+  }
+  if(this.size === 14){
+    this.price += 14;
+  }
+
+  return this.price;
+
 }
 
 
