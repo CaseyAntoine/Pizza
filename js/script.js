@@ -32,5 +32,10 @@ Pizza.prototype.getPrice = function() {
 
 $(document).ready(function() {
 
+  $("input[name=pineapple]").hover(function() {
+    $(".pineappleText").show();
+    $(this).prop("disabled", true);
+
+  })
 
 });
