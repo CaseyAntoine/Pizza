@@ -31,11 +31,18 @@ Pizza.prototype.getPrice = function() {
 // User Logic
 
 $(document).ready(function() {
+  var veggieToppings = [];
+  var vegInput = $("input[name=veggies]").val();
+  var sizePizza = $("input[name=pizzaSize]").val();
+
+
 
   $("input[name=pineapple]").hover(function() {
     $(".pineappleText").show();
     $(this).prop("disabled", true);
 
   })
+
+
 
 });
