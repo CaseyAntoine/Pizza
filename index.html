@@ -63,135 +63,158 @@
               <p>This is the order form.</p>
 
               <form>
-                <div class="form-row">
-                  <p>What size pizza would you like?</p>
-                </div>
-                <div class="form-row">
-                  <div class="form-check-inline">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="">
-                    <label class="form-check-label" for="exampleRadios1">
-                      Small
-                    </label>
+                <div class="form-group">
+                  <div class="form-row">
+                    <p>What size pizza would you like?</p>
                   </div>
-                  <div class="form-check-inline">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                    <label class="form-check-label" for="exampleRadios2">
-                      Medium
-                    </label>
-                  </div>
-                  <div class="form-check-inline">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="">
-                    <label class="form-check-label" for="exampleRadios3">
-                      Large
-                    </label>
-                  </div>
-                </div>
-                <div class="form-row">
-                  <p>What Toppings would you like?</p>
-                  <p><small class="text-muted">Select Veggie Toppings Below:</small></p>
-                </div>
-                <div class="form-row">
-                  <div class="col">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="">
-                      <label class="form-check-label" for="defaultCheck1">
-                        Default checkbox
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="">
-                      <label class="form-check-label" for="">
-                        Disabled checkbox
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="">
-                      <label class="form-check-label" for="defaultCheck1">
-                        Default checkbox
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="">
-                      <label class="form-check-label" for="">
-                        Disabled checkbox
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="">
-                      <label class="form-check-label" for="defaultCheck1">
-                        Default checkbox
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="">
-                      <label class="form-check-label" for="">
-                        Disabled checkbox
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="">
-                      <label class="form-check-label" for="defaultCheck1">
-                        Default checkbox
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="">
-                      <label class="form-check-label" for="">
-                        Disabled checkbox
-                      </label>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="">
-                      <label class="form-check-label" for="defaultCheck1">
-                        Default checkbox
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="">
-                      <label class="form-check-label" for="">
-                        Disabled checkbox
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="">
-                      <label class="form-check-label" for="defaultCheck1">
-                        Default checkbox
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="">
-                      <label class="form-check-label" for="">
-                        Disabled checkbox
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="">
-                      <label class="form-check-label" for="defaultCheck1">
-                        Default checkbox
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="">
-                      <label class="form-check-label" for="">
-                        Disabled checkbox
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="">
-                      <label class="form-check-label" for="defaultCheck1">
-                        Default checkbox
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="">
-                      <label class="form-check-label" for="">
-                        Disabled checkbox
-                      </label>
+                  <div class="form-row">
+                    <div class="col">
+                      <div class="form-check-inline">
+                        <input class="form-check-input" type="radio" name="pizzaSize" id="pizzaSize1" value="10">
+                        <label class="form-check-label" for="exampleRadios1">
+                          Small
+                        </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <input class="form-check-input" type="radio" name="pizzaSize" id="pizzaSize2" value="14">
+                        <label class="form-check-label" for="pizzaSize2">
+                          Medium
+                        </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <input class="form-check-input" type="radio" name="pizzaSize" id="pizzaSize3" value="18">
+                        <label class="form-check-label" for="pizzaSize3">
+                          Large
+                        </label>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <div class="form-group">
+                  <div class="form-row">
+                    <div class="col-12">
+                      <p>What Toppings would you like?</p>
+                      <p><small class="text-muted">Select Toppings Below:</small></p>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-6">
+                      <p>Vegetables:</p>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Black Olives
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="">
+                          Banana Peppers
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Artichoke Hearts
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="">
+                          Roasted Garlic
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Green Peppers
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="">
+                          Mushrooms
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Roma Tomatoes
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="">
+                          Fresh Spinach
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="pineapple" value="pineapple">
+                        <label class="form-check-label" for="pineapple">
+                          Pineapple <small class="pineappleText text-muted">does not go on pizza</small>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <p>Meats:</p>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Spicy Italian Sausage
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Bacon
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="">
+                          Sausage
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Anchovies
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="">
+                          Salami
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Grilled Chicken
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="">
+                          Pepperoni
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Meatball
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="">
+                          Canadian Bacon
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="btn btn-danger" type="button" name="order">Order Mah Pizza!</button>
               </form>
             </div>
           </div>
