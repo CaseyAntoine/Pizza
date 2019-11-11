@@ -32,7 +32,9 @@ Pizza.prototype.getPrice = function() {
 
 $(document).ready(function() {
   var veggieToppings = [];
+  var meatToppings = [];
   var vegInput = $("input[name=veggies]").val();
+  var meatInput = $("input[name=meats]").val();
   var sizePizza = $("input[name=pizzaSize]").val();
 
 
@@ -43,6 +45,10 @@ $(document).ready(function() {
 
   })
 
+  $("form").submit(function(ev) {
+    ev.PreventDefault();
 
+    
+  });
 
 });
