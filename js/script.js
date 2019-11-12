@@ -11,6 +11,9 @@ Pizza.prototype.getPrice = function() {
   this.veggies.forEach(function(veggies) {
     this.price += .50;
   })
+  this.meats.forEach(function(meats) {
+    this.price += .50;
+  })
   if(this.size === 10) {
     this.price += 9;
   }
@@ -31,11 +34,8 @@ Pizza.prototype.getPrice = function() {
 // User Logic
 
 $(document).ready(function() {
-  var veggieToppings = [];
-  var meatToppings = [];
-  var vegInput = $("input[name=veggies]").val();
-  var meatInput = $("input[name=meats]").val();
-  var sizePizza = $("input[name=pizzaSize]").val();
+
+
 
 
 
@@ -45,10 +45,33 @@ $(document).ready(function() {
 
   })
 
-  $("form").submit(function(ev) {
+  $("#orderForm").submit(function(ev) {
     ev.PreventDefault();
 
-    
+    var veggieInputs = $("input[name=veggies] :checked");
+    var meatInputs = $("input[name=meats] :checked");
+    var sizeInput = $(".pizzaSize").val();
+    var veggieToppings = [];
+    var meatToppings = [];
+
+    veggieInputs.forEach(function(veggieInputs) {
+      veggieToppings.push(veggieInputs);
+    });
+
+    meatInputs.forEach(function(meatInputs) {
+      meatToppings.push(meatInputs);
+    })
+
+    let myPizza = new Pizza(sizeInput, veggieInputs, meatInputs);
+
+    let price = myPizza.getPrice();
+
+    console.log(veggieToppings);
+    console.log(meatToppings);
+    console.log("this is myPizza: " + myPizza);
+
+
+
   });
 
 });
